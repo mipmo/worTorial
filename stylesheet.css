@@ -43,7 +43,8 @@ p {
     border-radius: 4px;
 }
 .header a.logo {
-    font-size: 2vh;
+    font-size: 2.5vh;
+    text-decoration: none;
 }
 div.w3-content {
     padding: 24px;
@@ -76,13 +77,13 @@ div.worTorial {
     }
 }
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: #043d6f;
-  text-align: left;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #043d6f;
+    text-align: left;
 }
 .header-right {
     float: right;
@@ -96,4 +97,26 @@ div.worTorial {
     .header-right {
       float: none;
     }
+}
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    font-size: 2.5vh;
+}
+a.blueButton {
+    background-color: #043d6f;
+    box-shadow: 1px 1px 5px #1a4e7c;
+    color: white;
+}
+a.whiteButton {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(216, 216, 216);
+    color: #032d50;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 2vh;
+    line-height: 25px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px #1a4e7c;
 }
