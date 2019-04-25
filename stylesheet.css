@@ -4,6 +4,7 @@ body {
 h1, h2, h3 {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    padding-top: 12px;
 }
 h1 {
     font-size: 5vh; 
@@ -15,6 +16,7 @@ h2 {
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5vh;
+    font-weight: lighter;
     color: white;
     text-rendering: optimizeLegibility;
     text-align: justify;
@@ -32,17 +34,16 @@ p {
 .header a {
     font-family: 'Roboto', sans-serif;
     float: left;
-    color: #043d6f;
+    color: #032d50;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-/*    font-size: 20px; */
+    font-size: 2vh;
     line-height: 25px;
     border-radius: 4px;
 }
 .header a.logo {
-    font-weight: bold;
-    font-size: 24px;
+    font-size: 2vh;
 }
 div.w3-content {
     padding: 24px;
@@ -82,4 +83,17 @@ div.worTorial {
   background-color: white;
   color: #043d6f;
   text-align: left;
+}
+.header-right {
+    float: right;
+}
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
 }
