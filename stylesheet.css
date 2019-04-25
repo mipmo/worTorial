@@ -1,11 +1,16 @@
 body {
     background: #043d6f;
 }
-h1 {
+h1, h2, h3 {
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+h1 {
     font-size: 5vh; 
     font-weight: bold;
-    color: white;
+}
+h2 {
+    font-size: 4vh;
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -13,11 +18,16 @@ p {
     color: white;
     text-rendering: optimizeLegibility;
     text-align: justify;
+    padding-bottom: 12px;
+    padding-top: 6px;
 }
 .header {
     overflow: hidden;
     background: white;
-    padding: 20px 10px;
+    padding: 10px 5px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    box-shadow: 2px 2px 5px #04345f;
 }
 .header a {
     font-family: 'Roboto', sans-serif;
@@ -35,5 +45,41 @@ p {
     font-size: 24px;
 }
 div.w3-content {
-    padding: 36px;
+    padding: 24px;
+    opacity: 1;
+    animation-name: fadeInMoveUp;
+    animation-duration: 1s;
+}
+div.worTorial {
+    background: #1a4e7c;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-shadow: 2px 2px 5px #04345f;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fadeInMoveUp {
+    from {
+        opacity: 0;
+        padding-top: 72px
+    }
+    to {
+        opacity: 1;
+        padding: auto
+    }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #043d6f;
+  text-align: left;
 }
