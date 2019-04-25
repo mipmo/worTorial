@@ -3,14 +3,16 @@ body {
 }
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 72px;
+    font-size: 6vh; 
     font-weight: bold;
     color: white;
 }
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: white;   
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5vh;
+    color: white;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
 }
 .header {
     overflow: hidden;
@@ -24,7 +26,7 @@ p {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 20px; 
+/*    font-size: 20px; */
     line-height: 25px;
     border-radius: 4px;
 }
@@ -32,14 +34,11 @@ p {
     font-weight: bold;
     font-size: 24px;
 }
-@media screen and (min-width: 601px) {
-    h1 {
-        font-size: 72px;
+div.w3-content {
+    padding: 36px;
+}
+@media only screen and (max-width: 320px) {
+    p { 
+       font-size: 3vw; 
     }
 }
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 36px;
-    }
-}  
