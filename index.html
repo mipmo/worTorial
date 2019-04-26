@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script> 
             $(function(){
-            $("#header").load("header.html"); 
-            $("#head").load("head.html"); 
+            $("head").load("head.html")
+            $("#header").load("header.html");
             });
         </script>
-        <div id="head"></div>
-        <title>Home | worTorial</title>
     </head>
     <body>
+        <script>
+            var title = "Home"
+        </script>
         <div id="header"></div>
         <div class="w3-content">
             <div class="worTorial">
