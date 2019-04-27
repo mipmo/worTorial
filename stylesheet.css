@@ -47,7 +47,11 @@ p {
     text-decoration: none;
 }
 div.w3-content {
-    padding: 24px;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
     opacity: 1;
     animation-name: fadeInMoveUp;
     animation-duration: 1s;

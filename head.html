@@ -5,3 +5,8 @@
 <script>
     document.title = title +  " | worTorial"
 </script>
+<script>
+    $.get("header.html", function(header){
+        $("#header").html(header);
+    }); 
+</script>
