@@ -27,7 +27,6 @@ p {
     width: 100%;
     overflow: hidden;
     background: white;
-    padding: 10px 5px;
     animation-name: fadeIn;
     animation-duration: 1s;
     box-shadow: 2px 2px 5px #04345f;
@@ -56,34 +55,29 @@ div.worTorial {
     padding-right: 36px;
     box-shadow: 2px 2px 5px #04345f;
     overflow: hidden;
-    padding-top: 0px;
-    padding-left: 24px;
-    padding-right: 24px;
     padding-bottom: 24px;
     opacity: 1;
     animation-name: fadeInMoveUp;
     animation-duration: 1s;
+    margin-top: 36px;
 }
 @keyframes fadeIn {
     from {
-        opacity: 0
+        opacity: 0;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 @keyframes fadeInMoveUp {
     from {
         opacity: 0;
-        padding-top: 72px
+        margin-top: 72px;
     }
     to {
         opacity: 1;
-        padding: auto
+        margin-top: 36px;
     }
-}
-.navbar-right {
-    float: right;
 }
 @media screen and (max-width: 500px) {
     .navbar a {
