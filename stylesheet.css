@@ -5,6 +5,7 @@ h1, h2, h3 {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     padding-top: 12px;
+    padding-bottom: 24px;
 }
 h1 {
     font-size: 5vh; 
@@ -16,12 +17,11 @@ h2 {
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5vh;
-    font-weight: lighter;
+    font-weight: 300;
     color: white;
     text-rendering: optimizeLegibility;
-    text-align: justify;
-    padding-bottom: 12px;
-    padding-top: 6px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
 }
 .navbar {
     width: 100%;
@@ -55,7 +55,6 @@ div.worTorial {
     padding-right: 36px;
     box-shadow: 2px 2px 5px #04345f;
     overflow: hidden;
-    padding-bottom: 24px;
     opacity: 1;
     animation-name: fadeInMoveUp;
     animation-duration: 1s;
@@ -72,11 +71,11 @@ div.worTorial {
 @keyframes fadeInMoveUp {
     from {
         opacity: 0;
-        margin-top: 72px;
+        transform: translateY(36px);
     }
     to {
         opacity: 1;
-        margin-top: 36px;
+        transform: translateY(0px);
     }
 }
 @media screen and (max-width: 500px) {
@@ -93,6 +92,10 @@ a {
     font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     font-size: 2.5vh;
+}
+a.btn-primary {
+    font-weight: normal;
+    color: white;
 }
 .btn-primary {
     background-color: #043d6f;
@@ -112,15 +115,27 @@ a {
     background-color: #04325b;
     border-color: #04325b;
 }
-a.whiteButton {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(216, 216, 216);
+a.btn-primary:active {
+    background-color: #04325b;
+    border-color: #04325b;
+}
+.btn-secondary {
+    background-color: white;
+    border-color: white;
+    box-shadow: 1px 1px 5px #1a4e7c;
     color: #032d50;
+    font-family: 'Roboto', sans-serif;
+    float: left;
     text-align: center;
     padding: 12px;
     text-decoration: none;
     font-size: 2vh;
     line-height: 25px;
     border-radius: 4px;
-    box-shadow: 1px 1px 5px #1a4e7c;
+    margin-bottom: 12px;
+}
+.btn-secondary:hover {
+    background-color: rgb(216,216,216);
+    border-color: rgb(216,216,216);
+    color: #032d50;
 }
