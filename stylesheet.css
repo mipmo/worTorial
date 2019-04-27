@@ -23,7 +23,8 @@ p {
     padding-bottom: 12px;
     padding-top: 6px;
 }
-.header {
+.navbar {
+    width: 100%;
     overflow: hidden;
     background: white;
     padding: 10px 5px;
@@ -31,7 +32,7 @@ p {
     animation-duration: 1s;
     box-shadow: 2px 2px 5px #04345f;
 }
-.header a {
+.navbar a {
     font-family: 'Roboto', sans-serif;
     float: left;
     color: #032d50;
@@ -42,11 +43,18 @@ p {
     line-height: 25px;
     border-radius: 4px;
 }
-.header a.logo {
+.navbar a.logo {
     font-size: 2.5vh;
     text-decoration: none;
 }
-div.w3-content {
+.navbar a.logo:hover {
+    color: #032949;
+}
+div.worTorial {
+    background: #1a4e7c;
+    padding-left: 36px;
+    padding-right: 36px;
+    box-shadow: 2px 2px 5px #04345f;
     overflow: hidden;
     padding-top: 0px;
     padding-left: 24px;
@@ -55,12 +63,6 @@ div.w3-content {
     opacity: 1;
     animation-name: fadeInMoveUp;
     animation-duration: 1s;
-}
-div.worTorial {
-    background: #1a4e7c;
-    padding-left: 36px;
-    padding-right: 36px;
-    box-shadow: 2px 2px 5px #04345f;
 }
 @keyframes fadeIn {
     from {
@@ -80,25 +82,16 @@ div.worTorial {
         padding: auto
     }
 }
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: #043d6f;
-    text-align: left;
-}
-.header-right {
+.navbar-right {
     float: right;
 }
 @media screen and (max-width: 500px) {
-    .header a {
+    .navbar a {
       float: none;
       display: block;
       text-align: left;
     }
-    .header-right {
+    .navbar-right {
       float: none;
     }
 }
@@ -107,10 +100,23 @@ a {
     text-decoration: underline;
     font-size: 2.5vh;
 }
-a.blueButton {
+.btn-primary {
     background-color: #043d6f;
+    border-color: #043d6f;
     box-shadow: 1px 1px 5px #1a4e7c;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 2vh;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.btn-primary:hover {
+    background-color: #04325b;
+    border-color: #04325b;
 }
 a.whiteButton {
     font-family: 'Roboto', sans-serif;
