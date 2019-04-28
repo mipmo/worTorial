@@ -22,6 +22,10 @@ p {
     text-rendering: optimizeLegibility;
     margin-bottom: 12px;
     letter-spacing: 0.5px;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 .navbar {
     width: 100%;
@@ -115,9 +119,14 @@ a.btn-primary {
     background-color: #04325b;
     border-color: #04325b;
 }
-a.btn-primary:active {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
     background-color: #04325b;
     border-color: #04325b;
+}
+a.btn-primary:not(:disabled):not(.disabled).active, a.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #04325b;
+    border-color: #04325b;
+    transform: translateY(1px);
 }
 .btn-secondary {
     display: block;
