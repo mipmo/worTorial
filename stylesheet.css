@@ -8,7 +8,7 @@ h1, h2, h3 {
     padding-bottom: 24px;
 }
 h1 {
-    font-size: 5vh; 
+    font-size: 6vh; 
     font-weight: bold;
 }
 h2 {
@@ -16,7 +16,7 @@ h2 {
 }
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5vh;
+    font-size: 2.4vh;
     font-weight: 300;
     color: white;
     text-rendering: optimizeLegibility;
@@ -120,19 +120,23 @@ a.btn-primary:active {
     border-color: #04325b;
 }
 .btn-secondary {
+    display: block;
     background-color: white;
     border-color: white;
-    box-shadow: 1px 1px 5px #1a4e7c;
+    box-shadow: 2px 2px 5px #1a4e7c;
     color: #032d50;
     font-family: 'Roboto', sans-serif;
-    float: left;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 2.2vh;
     line-height: 25px;
     border-radius: 4px;
+    margin-top: 12px;
     margin-bottom: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 150px;
 }
 .btn-secondary:hover {
     background-color: rgb(216,216,216);
